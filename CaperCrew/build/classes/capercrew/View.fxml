@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="697.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capercrew.ViewController">
+    <children>
+      <SplitPane fx:id="splitPool" dividerPositions="0.1890909090909091" layoutX="77.0" layoutY="18.0" orientation="VERTICAL" prefHeight="548.0" prefWidth="798.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="18.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="-56.0" prefHeight="49.7454528203287" prefWidth="642.3272504519636" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                          <Label id="lab1" fx:id="label1" layoutX="33.0" layoutY="17.0" minHeight="16" minWidth="69" prefHeight="31.0" prefWidth="317.0" text="MASTERMIND ACTUAL ACCOUNT: " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                          <Button id="generate" fx:id="generateTotal" layoutX="546.0" layoutY="27.0" onAction="#generatePool" prefHeight="54.0" prefWidth="124.0" text="GENERATE      POOL" textAlignment="CENTER" wrapText="true" />
+                        <TextField fx:id="account" editable="false" layoutX="306.0" layoutY="18.0" prefHeight="27.0" prefWidth="98.0" promptText="0" />
+                        <TextField editable="false" layoutX="409.0" layoutY="18.0" prefHeight="27.0" prefWidth="33.0" text="\$" />
+                        <TextField fx:id="obbligation" editable="false" layoutX="305.0" layoutY="54.0" prefHeight="27.0" prefWidth="98.0" promptText="0" />
+                        <TextField editable="false" layoutX="408.0" layoutY="54.0" prefHeight="27.0" prefWidth="33.0" text="\$" />
+                        <Label id="lab1" fx:id="label2" layoutX="180.0" layoutY="49.0" minHeight="16" minWidth="69" prefHeight="33.0" prefWidth="124.0" text="OBBLIGATION:" textFill="#f7f7f7">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                        <Button id="generate" fx:id="generateHalf" layoutX="547.0" layoutY="27.0" onAction="#generateHalfPool" prefHeight="54.0" prefWidth="124.0" text="GENERATE  HALF  POOL" textAlignment="CENTER" visible="false" wrapText="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Pane id="PoolPane" fx:id="PoolPane" layoutX="47.0" layoutY="14.0" prefHeight="449.0" prefWidth="817.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView id="table" fx:id="table" layoutX="43.0" layoutY="8.0" prefHeight="343.0" prefWidth="722.0" tableMenuButtonVisible="true">
+                          <columns>
+                              <TableColumn fx:id="id" prefWidth="51.490936279296875" text="id" visible="false" />
+                              <TableColumn fx:id="name" maxWidth="65.0" minWidth="65.0" prefWidth="57.600006103515625" resizable="false" text="name" />
+                              <TableColumn fx:id="weapon" maxWidth="65.0" minWidth="65.0" prefWidth="63.7091064453125" resizable="false" text="weapon" />
+                              <TableColumn fx:id="accuracy" maxWidth="65.0" minWidth="65.0" prefWidth="74.18179321289062" resizable="false" text="accuracy" />
+                              <TableColumn fx:id="vehicle" maxWidth="65.0" minWidth="65.0" prefWidth="52.36370849609375" resizable="false" text="vehicle" />
+                              <TableColumn fx:id="pc" maxWidth="65.0" minWidth="65.0" prefWidth="86.4000244140625" resizable="false" text="PC" />
+                              <TableColumn fx:id="drive" maxWidth="65.0" minWidth="65.0" prefWidth="54.109130859375" resizable="false" text="drive" />
+                              <TableColumn fx:id="slink" maxWidth="65.0" minWidth="65.0" prefWidth="75.92727661132812" text="slink" />
+                              <TableColumn fx:id="charme" maxWidth="65.0" minWidth="65.0" prefWidth="61.090911865234375" resizable="false" text="charme" />
+                              <TableColumn fx:id="strategy" maxWidth="65.0" minWidth="65.0" prefWidth="74.18182373046875" resizable="false" text="strategy" />
+                              <TableColumn fx:id="reflex" maxWidth="65.0" minWidth="65.0" prefWidth="50.61822509765625" resizable="false" text="reflex" />
+                              <TableColumn fx:id="speed" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" resizable="false" sortable="false" text="speed" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="554.0" layoutY="368.0" mnemonicParsing="false" onAction="#acceptTeam" prefHeight="54.0" prefWidth="142.0" text="ACCEPT THE  NEW CREW" textAlignment="CENTER" textFill="#c21010" wrapText="true" />
+                        <ComboBox fx:id="cb1" layoutX="73.0" layoutY="372.0" prefHeight="27.0" prefWidth="151.0" />
+                        <ComboBox fx:id="cb2" layoutX="321.0" layoutY="372.0" prefHeight="27.0" prefWidth="151.0" />
+                        <Label layoutX="20.0" layoutY="377.0" text="1. role: ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="256.0" layoutY="377.0" prefHeight="21.0" prefWidth="67.0" text="2. role: ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="49.0" text="1.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="77.0" text="2.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="133.0" text="4.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="105.0" text="3.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="161.0" text="5.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="189.0" text="6.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="218.0" text="7.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="276.0" text="9.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="30.0" layoutY="247.0" text="8.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="23.0" layoutY="304.0" prefHeight="17.0" prefWidth="26.0" text="10.">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <Pane id="ChoosePane" fx:id="ChoosePane" layoutX="57.0" layoutY="24.0" prefHeight="448.5818026254202" prefWidth="827.3454258538878" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView id="table1" fx:id="tableActual" layoutX="45.0" layoutY="12.0" prefHeight="337.0" prefWidth="721.0">
+                           <columns>
+                              <TableColumn fx:id="idActual" prefWidth="51.490936279296875" text="id" visible="false" />
+                              <TableColumn fx:id="nameActual" minWidth="46.25452423095703" prefWidth="46.25452423095703" text="name" />
+                              <TableColumn fx:id="weaponActual" prefWidth="59.92724609375" text="weapon" />
+                              <TableColumn fx:id="accuracyActual" minWidth="6.109100341796875" prefWidth="64.87277221679688" text="accuracy" />
+                              <TableColumn fx:id="vehicleActual" prefWidth="48.58174133300781" text="vehicle" />
+                              <TableColumn fx:id="pcActual" prefWidth="29.672698974609375" text="PC" />
+                              <TableColumn fx:id="driveActual" prefWidth="40.145416259765625" text="drive" />
+                              <TableColumn fx:id="slinkActual" prefWidth="49.1636962890625" text="slink" />
+                              <TableColumn fx:id="charmeActual" prefWidth="54.690887451171875" text="charme" />
+                              <TableColumn fx:id="strategyActual" prefWidth="64.29095458984375" text="strategy" />
+                              <TableColumn fx:id="reflexActual" prefWidth="48.87274169921875" text="reflex" />
+                              <TableColumn fx:id="speedActual" maxWidth="112.581787109375" minWidth="20.199951171875" prefWidth="50.32720947265625" text="speed" />
+                              <TableColumn fx:id="role1Column" maxWidth="112.581787109375" minWidth="20.199951171875" prefWidth="74.4727783203125" text="1th role" />
+                              <TableColumn fx:id="role2Column" maxWidth="112.581787109375" minWidth="20.199951171875" prefWidth="88.727294921875" text="2th role" />
+             
+                                   </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane fx:id="splitHeist" dividerPositions="0.19072164948453607" layoutX="879.0" layoutY="18.0" orientation="VERTICAL" prefHeight="548.0" prefWidth="369.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="879.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="18.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="405.0">
+               <children>
+                  <Button layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#generateHeist" prefHeight="54.0" prefWidth="127.0" text="GENERATE        HEIST" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="counter" alignment="CENTER" editable="false" layoutX="191.0" layoutY="31.0" prefHeight="47.0" prefWidth="74.0" visible="false">
+                     <font>
+                        <Font name="Consolas Bold" size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane layoutX="500.0" minHeight="0.0" minWidth="0.0" prefHeight="413.0" prefWidth="250.0">
+               <children>
+                  <Pane id="HeistPane" fx:id="HeistPane" layoutX="80.0" layoutY="6.0" prefHeight="340.0" prefWidth="223.0">
+                     <children>
+                        <TextArea id="heistArea" fx:id="heistArea2" editable="false" layoutY="112.0" prefHeight="229.0" prefWidth="223.0" visible="false" />
+                        <TextArea fx:id="heistArea1" editable="false" focusTraversable="false" layoutY="4.0" prefHeight="83.0" prefWidth="222.0" visible="false" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="start" layoutX="141.0" layoutY="361.0" mnemonicParsing="false" onAction="#startGame" prefHeight="54.0" prefWidth="89.0" text="START GAME" textAlignment="CENTER" textFill="#2c8214" textOverrun="CLIP" wrapText="true" />
+                  <Button id="reset" fx:id="reset" layoutX="27.0" layoutY="361.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="54.0" prefWidth="89.0" text="RESET" textFill="#da1a1a" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>

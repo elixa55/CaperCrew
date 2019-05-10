@@ -1,0 +1,33 @@
+.root {
+     -fx-background-image: url("/bg1.jpg");
+}
+
+#splitPool {
+     -fx-background-image: url('/red.png');
+}
+
+#splitHeist {
+    -fx-background-image: url('/red.png');
+}
+.button{
+    -fx-text-fill:bisque;
+    -fx-font-size: 15px;
+    -fx-background-color: linear-gradient(#999999 0%, #000000 50%, #999999 100%);
+    -fx-padding: 3 20 3 20;
+    -fx-border-radius: 20px;
+    -fx-border: 2px;
+    -fx-border-color: black;
+ }
+#table {
+     -fx-background-image: url('/metal1.jpg');
+}
+
+#start {
+    -fx-text-fill:bisque;
+    -fx-font-size: 15px;
+    -fx-background-color: linear-gradient(#f00 0%, #000000 50%, #f00 100%);
+    -fx-padding: 3 20 3 20;
+    -fx-border-radius: 20px;
+    -fx-border: 2px;
+    -fx-border-color: black;
+}
