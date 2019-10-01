@@ -1,0 +1,11 @@
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.exe
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.deps.json
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.runtimeconfig.json
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.runtimeconfig.dev.json
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.dll
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\bin\Debug\netcoreapp3.0\Probe.pdb
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\obj\Debug\netcoreapp3.0\Probe.csprojAssemblyReference.cache
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\obj\Debug\netcoreapp3.0\Probe.AssemblyInfoInputs.cache
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\obj\Debug\netcoreapp3.0\Probe.AssemblyInfo.cs
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\obj\Debug\netcoreapp3.0\Probe.dll
+C:\Users\Editke\source\repos\elixa55\Teszt\Probe\obj\Debug\netcoreapp3.0\Probe.pdb
